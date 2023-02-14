@@ -2,11 +2,16 @@
 
 using namespace std;
 
+// unions can be anonymous(unnamed)
+// only one member is active(alive) at a time
+// you can only access the currently active member
+// * any other access is undefined behavior
 
 consteval auto use_union() {
     union U {
         int i;
         float f;
+        double d;
     };
 
     U u;

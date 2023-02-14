@@ -8,7 +8,7 @@ consteval auto use_union() {
         int i;
         float f;
     };
-    f = 42;
+    i = 42;
     return i;
 }
 
